@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Farming</title>
+  <style>
+    /* Animated Gradient Background */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #6dd5ed, #2193b0, #6dd5ed, #2193b0);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .button-container {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .smart-button {
+      padding: 15px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .smart-button:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: scale(1.05);
+    }
+
+    @media screen and (max-width: 768px) {
+      .smart-button {
+        padding: 12px 18px;
+        font-size: 16px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .button-container {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Smart Farming</h1>
+  <div class="button-container">
+    <a href="ai-chatbot.html" class="smart-button">AI Chat Bot</a>
+    <a href="fertilizer-recommendation.html" class="smart-button">AI Fertilizer Recommendation</a>
+    <a href="water-management.html" class="smart-button">AI Water Management</a>
+    <a href="contract-farming.html" class="smart-button">Contract Farming</a>
+  </div>
+</body>
+</html>
