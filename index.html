@@ -34,9 +34,9 @@
 
     .button-container {
       display: flex;
+      flex-direction: column; /* Changed to vertical alignment */
       gap: 25px;
-      flex-wrap: wrap;
-      justify-content: center;
+      align-items: center;
     }
 
     .smart-button {
@@ -51,6 +51,8 @@
       transition: all 0.3s ease;
       cursor: pointer;
       text-decoration: none;
+      width: 250px;
+      text-align: center;
     }
 
     .smart-button:hover {
@@ -62,6 +64,7 @@
       .smart-button {
         padding: 12px 18px;
         font-size: 16px;
+        width: 220px;
       }
 
       h1 {
@@ -69,7 +72,6 @@
       }
 
       .button-container {
-        flex-direction: column;
         gap: 15px;
       }
     }
